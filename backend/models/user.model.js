@@ -1,4 +1,3 @@
-import { compare } from "bcryptjs";
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema(
@@ -12,7 +11,7 @@ const userSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
-    phonNumber: {
+    phoneNumber: {
       type: Number,
       required: true,
     },
